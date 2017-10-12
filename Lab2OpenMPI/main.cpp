@@ -39,7 +39,7 @@ void displayMatrix(int rows, int cols, int **matrix) {
 }
 
 int main(int argc, const char * argv[]) {
-    int rank, numberOfProcess, n = 3, m = 4, k = 0, root = 1, *buffer;
+    int rank, numberOfProcess, n = 3, m = 4, k = 2, root = 1, *buffer;
     MPI_Init(NULL, NULL);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcess);
